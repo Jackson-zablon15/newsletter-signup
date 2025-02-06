@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Subscribe to our monthly newsletter to stay updated on the latest news and product updates.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script defer src="./main.js"></script>
+</head>
+<body>
+
+    <!--Sign-up form start-->
+  <article class="signup-form" id="signPage">
+
+    <div class="text-container">
+      <h1 class="title">Stay updated!</h1>
+  <p class="title-text">Join 60,000+ product managers receiving monthly updates on:</p>
+  
+  <ul class="feature-lists">
+    <li><span><img src="./assets/images/icon-list.svg" alt=""></span>Product discovery and building what matters</li>
+    <li><span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
+    <li><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
+  </ul>
+  
+  <form id="form" novalidate>
+
+    <div class="labels">
+      <label for="email">Email address</label>
+    <span id="error" class="error-message"> valid email is required</span>
+    </div>
+
+    <input autofocus id="myInput" type="email" name="email" placeholder="email@company.com" required>
+
+    <button class="btn" id="submitBtn">Subscribe to monthly newsletter</button>
+  </form>
+  
+</div>
+
+<div class="image-container">
+  <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+</div>
+</article>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <article class="success-article" id="successPage">
+
+    <img src="./assets/images/icon-success.svg" alt="">
+
+    <h1 class="title">Thanks for subscribing!</h1>
+  
+    <p class="title-text">
+      A confirmation email has been sent to <strong><span id="user-email">ash@loremcompany.com</span></strong>. 
+  Please open it and click the button inside to confirm your subscription.
+    </p>
+  
+    <button class="btn" id="dismissBtn">Dismiss message</button>
+  
+</article>
+  <!-- Success message end -->
+</body>
+</html>
